@@ -677,7 +677,6 @@
       position: relative;
       border-radius: var(--radius-lg);
       overflow: hidden;
-      cursor: pointer;
       box-shadow: var(--shadow-sm);
       transition: transform var(--transition), box-shadow var(--transition);
     }
@@ -895,6 +894,7 @@
       grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: 220px;
       gap: .85rem;
+      grid-auto-flow: dense;
     }
 
     .gallery-item {
@@ -936,6 +936,7 @@
 
     .gallery-item:nth-child(5) {
       grid-column: span 2;
+      grid-row: span 2;
     }
 
     .gallery-item:nth-child(8) {
@@ -945,12 +946,14 @@
 
     .gallery-item:nth-child(11) {
       grid-column: span 2;
+      grid-row: span 2;
     }
 
     @media (max-width: 900px) {
       .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 180px;
+        grid-auto-flow: dense;
       }
 
       .gallery-item:nth-child(1) {
@@ -976,6 +979,7 @@
       .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 160px;
+        grid-auto-flow: dense;
       }
 
       .gallery-item:nth-child(1) {
@@ -1619,7 +1623,7 @@
         <!-- Card 1: Kitchen Cabinets (large) -->
         <article class="bento-card reveal" role="listitem" tabindex="0" aria-label="Kitchen Cabinets service">
           <div class="bento-img">
-            <img src="https://www.thewoodspirit.com/foto_home1.jpg" alt="Custom kitchen cabinets" loading="lazy" />
+            <img src="./Fotos nuevas Wood spirit/WhatsApp Image 2026-05-06 at 7.01.18 PM.jpeg" alt="Custom kitchen cabinets" loading="lazy" />
           </div>
           <div class="bento-overlay" aria-hidden="true"></div>
           <div class="bento-body">
@@ -1743,51 +1747,57 @@
 
       <div class="gallery-grid" role="list">
         <div class="gallery-item reveal" role="listitem" tabindex="0" aria-label="Open gallery image 1">
-          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit1.jpeg" alt="The Wood Spirit project 1"
+          <img src="./Fotos nuevas Wood spirit/WhatsApp Image 2026-05-06 at 7.01.18 PM (2).jpeg" alt="The Wood Spirit project 1"
             loading="lazy" />
         </div>
         <div class="gallery-item reveal reveal-delay-1" role="listitem" tabindex="0" aria-label="Open gallery image 2">
-          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit2.jpeg" alt="The Wood Spirit project 2"
+          <img src="./Fotos nuevas Wood spirit/WhatsApp Image 2026-05-06 at 7.01.18 PM (1).jpeg" alt="The Wood Spirit project 2"
             loading="lazy" />
         </div>
         <div class="gallery-item reveal reveal-delay-2" role="listitem" tabindex="0" aria-label="Open gallery image 3">
-          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit3.jpeg" alt="The Wood Spirit project 3"
+          <img src="./Fotos nuevas Wood spirit/WhatsApp Image 2026-05-06 at 7.01.18 PM (2).jpeg" alt="The Wood Spirit project 3"
             loading="lazy" />
         </div>
         <div class="gallery-item reveal reveal-delay-3" role="listitem" tabindex="0" aria-label="Open gallery image 4">
-          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit4.jpeg" alt="The Wood Spirit project 4"
+          <img src="./Fotos nuevas Wood spirit/WhatsApp Image 2026-05-06 at 7.01.19 PM.jpeg" alt="The Wood Spirit project 4"
             loading="lazy" />
         </div>
-        <div class="gallery-item reveal" role="listitem" tabindex="0" aria-label="Open gallery image 5">
-          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit5.jpeg" alt="The Wood Spirit project 5"
+        <div class="gallery-item reveal" role="listitem" aria-label="Play gallery video 1">
+          <video src="./Fotos nuevas Wood spirit/WhatsApp Video 2026-05-06 at 7.01.19 PM.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+        </div>
+        <div class="gallery-item reveal reveal-delay-1" role="listitem" tabindex="0" aria-label="Open gallery image 5">
+          <img src="./Fotos nuevas Wood spirit/WhatsApp Image 2026-05-06 at 7.01.19 PM (1).jpeg" alt="The Wood Spirit project 5"
             loading="lazy" />
         </div>
-        <div class="gallery-item reveal reveal-delay-1" role="listitem" tabindex="0" aria-label="Open gallery image 6">
-          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit6.jpeg" alt="The Wood Spirit project 6"
+        <div class="gallery-item reveal reveal-delay-2" role="listitem" tabindex="0" aria-label="Open gallery image 6">
+          <img src="./Fotos nuevas Wood spirit/WhatsApp Image 2026-05-06 at 7.01.20 PM.jpeg" alt="The Wood Spirit project 6"
             loading="lazy" />
         </div>
-        <div class="gallery-item reveal reveal-delay-2" role="listitem" tabindex="0" aria-label="Open gallery image 7">
-          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit7.jpeg" alt="The Wood Spirit project 7"
+        <div class="gallery-item reveal reveal-delay-3" role="listitem" tabindex="0" aria-label="Open gallery image 7">
+          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit1.jpeg" alt="The Wood Spirit project 7"
             loading="lazy" />
         </div>
-        <div class="gallery-item reveal reveal-delay-3" role="listitem" tabindex="0" aria-label="Open gallery image 8">
-          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit8.jpeg" alt="The Wood Spirit project 8"
+        <div class="gallery-item reveal" role="listitem" tabindex="0" aria-label="Open gallery image 8">
+          <img src="./Fotos nuevas Wood spirit/WhatsApp Image 2026-05-06 at 7.01.20 PM (1).jpeg" alt="The Wood Spirit project 8"
             loading="lazy" />
         </div>
-        <div class="gallery-item reveal" role="listitem" tabindex="0" aria-label="Open gallery image 9">
-          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit9.jpeg" alt="The Wood Spirit project 9"
+        <div class="gallery-item reveal reveal-delay-1" role="listitem" tabindex="0" aria-label="Open gallery image 9">
+          <img src="./Fotos nuevas Wood spirit/WhatsApp Image 2026-05-06 at 7.01.20 PM (2).jpeg" alt="The Wood Spirit project 9"
             loading="lazy" />
         </div>
-        <div class="gallery-item reveal reveal-delay-1" role="listitem" tabindex="0" aria-label="Open gallery image 10">
-          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit10.jpeg" alt="The Wood Spirit project 10"
+        <div class="gallery-item reveal reveal-delay-2" role="listitem" aria-label="Play gallery video 2">
+          <video src="./Fotos nuevas Wood spirit/WhatsApp Video 2026-05-06 at 7.01.19 PM (1).mp4" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+        </div>
+        <div class="gallery-item reveal reveal-delay-3" role="listitem" tabindex="0" aria-label="Open gallery image 10">
+          <img src="./Fotos nuevas Wood spirit/WhatsApp Image 2026-05-06 at 7.01.20 PM (3).jpeg" alt="The Wood Spirit project 10"
             loading="lazy" />
         </div>
-        <div class="gallery-item reveal reveal-delay-2" role="listitem" tabindex="0" aria-label="Open gallery image 11">
-          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit11.jpeg" alt="The Wood Spirit project 11"
+        <div class="gallery-item reveal" role="listitem" tabindex="0" aria-label="Open gallery image 11">
+          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit5.jpeg" alt="The Wood Spirit project 11"
             loading="lazy" />
         </div>
-        <div class="gallery-item reveal reveal-delay-3" role="listitem" tabindex="0" aria-label="Open gallery image 13">
-          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit13.jpeg" alt="The Wood Spirit project 13"
+        <div class="gallery-item reveal reveal-delay-1" role="listitem" tabindex="0" aria-label="Open gallery image 12">
+          <img src="https://www.thewoodspirit.com/galeria/thewoodspirit9.jpeg" alt="The Wood Spirit project 12"
             loading="lazy" />
         </div>
       </div>
@@ -1795,15 +1805,16 @@
   </section>
 
   <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close media viewer">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
         aria-hidden="true">
         <line x1="18" y1="6" x2="6" y2="18" />
         <line x1="6" y1="6" x2="18" y2="18" />
       </svg>
     </button>
-    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" style="display: none;" />
+    <video class="lightbox-video" id="lightboxVideo" style="display: none; width: 100%; height: 100%; object-fit: contain;" controls autoplay muted></video>
   </div>
 
   <!-- ══ CONTACT ══ -->
@@ -1818,20 +1829,6 @@
               love to hear about your vision. Reach out — consultations are free.</p>
           </div>
           <div class="contact-channels" role="list">
-            <a href="tel:+17542708152" class="contact-channel reveal reveal-delay-1" role="listitem"
-              aria-label="Call us at +1 754 270 8152">
-              <div class="contact-channel-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.18a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l1.27-.89a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
-                    fill="currentColor" />
-                </svg>
-              </div>
-              <div>
-                <div class="contact-channel-label" data-i18n="contact.phone">Phone</div>
-                <div class="contact-channel-value">+1 (754) 270-8152</div>
-              </div>
-            </a>
             <a href="tel:+17542708151" class="contact-channel reveal reveal-delay-1" role="listitem"
               aria-label="Call us at +1 754 270 8151">
               <div class="contact-channel-icon" aria-hidden="true">
@@ -1842,8 +1839,22 @@
                 </svg>
               </div>
               <div>
-                <div class="contact-channel-label" data-i18n="contact.phoneAlt">Phone (Alt)</div>
+                <div class="contact-channel-label" data-i18n="contact.phone">Phone</div>
                 <div class="contact-channel-value">+1 (754) 270-8151</div>
+              </div>
+            </a>
+            <a href="tel:+17542708152" class="contact-channel reveal reveal-delay-1" role="listitem"
+              aria-label="Call us at +1 754 270 8152">
+              <div class="contact-channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.18a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l1.27-.89a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-channel-label" data-i18n="contact.phoneAlt">Phone (Alt)</div>
+                <div class="contact-channel-value">+1 (754) 270-8152</div>
               </div>
             </a>
             <a href="mailto:thewoodspirit.fl@gmail.com" class="contact-channel reveal reveal-delay-2" role="listitem"
@@ -1868,7 +1879,7 @@
           <h3 class="contact-cta-title" data-i18n="cta.title">Message Us on WhatsApp</h3>
           <p class="contact-cta-desc" data-i18n="cta.desc">Get a quote or ask any question — we typically reply within a
             few hours.</p>
-          <a href="https://wa.me/541126870077?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"
+          <a href="https://wa.me/17542708151?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"
             aria-label="Message The Wood Spirit on WhatsApp">
             <!-- WhatsApp SVG -->
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -1893,7 +1904,7 @@
                   d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
               </svg>
             </a>
-            <a href="https://wa.me/541126870077?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="contact-social-btn"
+            <a href="https://wa.me/17542708151?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="contact-social-btn"
               role="listitem" aria-label="Contact on WhatsApp">
               <svg viewBox="0 0 24 24">
                 <path
@@ -1931,8 +1942,8 @@
                 </svg>
               </div>
               <div>
-                <a href="tel:+17542708152">+1 (754) 270-8152</a><br />
-                <a href="tel:+17542708151">+1 (754) 270-8151</a>
+                <a href="tel:+17542708151">+1 (754) 270-8151</a><br />
+                <a href="tel:+17542708152">+1 (754) 270-8152</a>
               </div>
             </div>
             <div class="map-detail">
@@ -1990,7 +2001,7 @@
                 <path
                   d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.18a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l1.27-.89a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
-              <a href="tel:+17542708152">+1 (754) 270-8152</a>
+              <a href="tel:+17542708151">+1 (754) 270-8151</a>
             </li>
             <li class="footer-contact-item">
               <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -2019,7 +2030,7 @@
                 d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
             </svg>
           </a>
-          <a href="https://wa.me/+17542001178" target="_blank" rel="noopener noreferrer" role="listitem"
+          <a href="https://wa.me/17542708151" target="_blank" rel="noopener noreferrer" role="listitem"
             aria-label="WhatsApp">
             <svg viewBox="0 0 24 24">
               <path
@@ -2032,7 +2043,7 @@
   </footer>
 
   <!-- ══ WHATSAPP FLOAT ══ -->
-  <a href="https://wa.me/541126870077?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="wa-float"
+  <a href="https://wa.me/17542708151?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="wa-float"
     aria-label="Contact The Wood Spirit on WhatsApp">
     <div class="wa-float-pulse" aria-hidden="true"></div>
     <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -2097,13 +2108,29 @@
     // ── Gallery lightbox ──
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxVideo = document.getElementById('lightboxVideo');
     const lightboxClose = document.getElementById('lightboxClose');
 
     document.querySelectorAll('.gallery-item').forEach(item => {
       const img = item.querySelector('img');
+      const video = item.querySelector('video');
+
+      if (!img && !video) return;
+
+      item.setAttribute('tabindex', '0');
+      item.setAttribute('role', 'button');
+
       const open = () => {
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
+        if (img) {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightboxImg.style.display = '';
+          lightboxVideo.style.display = 'none';
+        } else if (video) {
+          lightboxVideo.src = video.src;
+          lightboxVideo.style.display = '';
+          lightboxImg.style.display = 'none';
+        }
         lightbox.classList.add('open');
         document.body.style.overflow = 'hidden';
         lightboxClose.focus();
@@ -2115,6 +2142,7 @@
     const closeLightbox = () => {
       lightbox.classList.remove('open');
       document.body.style.overflow = '';
+      lightboxVideo.pause();
     };
     lightboxClose.addEventListener('click', closeLightbox);
     lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
